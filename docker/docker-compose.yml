@@ -1,0 +1,19 @@
+services:
+  mysql:
+    container_name: 'mysql-leaderboard'
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=leaderboard_db'
+      - 'MYSQL_PASSWORD=1234'
+      - 'MYSQL_ROOT_PASSWORD=1234'
+      - 'MYSQL_USER=user'
+    ports:
+      - '33306:3306'
+
+  redis:
+    image: redis
+    container_name: redis-learderboard
+    ports:
+      - '6379:6379'
+    volumes:
+      - ./data:/data
