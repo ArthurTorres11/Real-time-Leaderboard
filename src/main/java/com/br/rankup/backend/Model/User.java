@@ -1,11 +1,18 @@
 package com.br.rankup.backend.Model;
 
 import com.br.rankup.backend.Model.Enums.Rank;
-import io.lettuce.core.dynamic.annotation.CommandNaming;
-import jakarta.persistence.*;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
-import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "user")
@@ -18,10 +25,10 @@ public class User {
 
     @Column(name = "user_name", nullable = false)
     private String name;
-
+    
+    @NotNull(message = "CPF é obrigatório")
+    @Pattern(regexp = "\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}", message = "Formato de CPF inválido")
     @Column(name = "user_cpf", nullable = false)
-    @Size(min = 11, max = 11, message = "CPF deve ter 11 caracteres")
-    @Pattern(regexp = "\\d{11}", message = "CPF deve conter apenas números")
     private String cpf;
 
     @Column(name = "user_score", nullable = false)
