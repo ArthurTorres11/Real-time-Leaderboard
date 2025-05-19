@@ -72,22 +72,6 @@ O rank é baseado na **posição** do usuário na leaderboard:
 
 ---
 
-## 📦 Rodando o Projeto Localmente
-
-1. **Clone o projeto**
-   ```bash
-   git clone https://github.com/seu-usuario/rankup-leaderboard.git
-   cd rankup-leaderboard]
-   ## 🚀 Como Executar o Projeto
-
-### 1. Suba o Redis e o MySQL com Docker
-
-```bash
-docker-compose up -d
-
-
-
-
 #👨‍💻 Autor
 #Desenvolvido por Arthur Torres de Camargo de Oliveira
 #Estudante de Engenharia da Computação
@@ -99,5 +83,7 @@ Persistência de dados
 Redis e estruturas de dados eficientes
 Design de APIs REST
 Camadas de serviço e boas práticas no Spring
+
+
 
 
