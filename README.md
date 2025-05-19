@@ -1,6 +1,3 @@
-from pathlib import Path
-
-readme_content = """
 # 🏆 RankUp - Sistema de Ranqueamento em Tempo Real
 
 Um sistema completo de **leaderboard** com ranking de usuários atualizado em **tempo real**. Utiliza banco de dados relacional (MySQL) para persistência, e **Redis Sorted Set** para cálculo eficiente das posições e ranks dos usuários.
@@ -89,12 +86,14 @@ O rank é baseado na **posição** do usuário na leaderboard:
 docker-compose up -d
 
 
-👨‍💻 Autor
-Desenvolvido por Arthur Torres de Camargo de Oliveira
-Estudante de Engenharia da Computação
 
-🧭 Referência de Estudos
-Este projeto segue como prática do roadmap.sh de Backend e explora fundamentos de:
+
+#👨‍💻 Autor
+#Desenvolvido por Arthur Torres de Camargo de Oliveira
+#Estudante de Engenharia da Computação
+
+#🧭 Referência de Estudos
+#Este projeto segue como prática do roadmap.sh de Backend e explora fundamentos de:
 
 Persistência de dados
 Redis e estruturas de dados eficientes
