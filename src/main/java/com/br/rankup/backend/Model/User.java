@@ -36,7 +36,7 @@ public class User {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "user_rank", nullable = false)
-    private Rank rank;
+    private Rank rank = Rank.BRONZE;
 
     @Column(name = "user_position", nullable = false)
     private int position;
