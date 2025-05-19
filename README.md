@@ -72,17 +72,24 @@ O rank é baseado na **posição** do usuário na leaderboard:
 
 ---
 
-#👨‍💻 Autor
-#Desenvolvido por Arthur Torres de Camargo de Oliveira
-#Estudante de Engenharia da Computação
+👨‍💻 Autor
 
-#🧭 Referência de Estudos
-#Este projeto segue como prática do roadmap.sh de Backend e explora fundamentos de:
+Desenvolvido por Arthur Torres de Camargo de Oliveira
+
+Estudante de Engenharia da Computação
+
+🧭 Referência de Estudos
+
+Este projeto segue como prática do roadmap.sh de Backend e explora fundamentos de:
 
 Persistência de dados
+
 Redis e estruturas de dados eficientes
+
 Design de APIs REST
+
 Camadas de serviço e boas práticas no Spring
+
 
 
 
